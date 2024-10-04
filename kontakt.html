@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="iws projekt.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Kontakt informacije</h1>
+        <form id="contactForm">
+            <div>
+                <label for="name">Ime i prezime:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">G-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div>
+                <label>Odaberite jednu od opcija:</label><br>
+                <input type="radio" id="option1" name="gender" value="Muško">
+                <label for="option1">Muško</label><br>
+                <input type="radio" id="option2" name="gender" value="Žensko">
+                <label for="option2">Žensko</label><br>
+            </div>
+            <div>
+                <label for="consent">Pristanak:</label><br>
+                <input type="checkbox" id="consent" name="consent" value="Pristajem">
+                <label for="consent">Pristajem na davanje svojih informacija</label><br>
+            </div>
+            <div>
+                <label for="status">Status vozačke dozvole:</label>
+                <select id="status" name="status">
+                    <option value="Položen vozački ispit">Položen vozački ispit</option>
+                    <option value="Nepoložen vozački ispit">Nepoložen vozački ispit</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Pošalji</button>
+            </div>
+        </form>
+        <div class="back-button">
+            <a href="index.html"><button>Početna stranica</button></a>
+        </div>
+    </div>
+    <script src="iws projekt.js"></script>
+</body>
+</html>
